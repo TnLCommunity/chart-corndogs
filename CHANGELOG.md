@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/TnLCommunity/chart-corndogs/compare/v1.0.0...v1.0.1) (2022-02-28)
+
+
+### Bug Fixes
+
+* remove values-skaffold-local.yaml because it should be in the corndogs repo ([9e9a3b6](https://github.com/TnLCommunity/chart-corndogs/commit/9e9a3b6468fd2e9c64d4c85354e967f35f89836c))
+
 # 1.0.0 (2022-02-28)
 
 
