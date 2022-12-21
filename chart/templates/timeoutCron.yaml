@@ -1,0 +1,27 @@
+{{ if .Values.timeoutCron.enabled}}
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "corndogs.fullname" . }}
+spec:
+  schedule: {{ .Values.timeoutCron.schedule | quote }}
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: timeout-cron
+            image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+            imagePullPolicy:  {{ .Values.image.pullPolicy}}
+            args:
+            - timeout
+            - {{printf "-a %s" (.Values.timeoutCron.address | default (include "corndogs.fullname" .)) }}
+            - {{printf "-p %v" (.Values.timeoutCron.port | default .Values.service.port) }}
+            {{- if .Values.timeoutCron.queue }}
+            - {{printf "-q %v" (.Values.timeoutCron.queue | default .Values.service.queue) }}
+            {{- end}} 
+          restartPolicy:  {{ .Values.timeoutCron.restartPolicy | default "OnFailure"}}
+{{- end}}

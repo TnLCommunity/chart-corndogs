@@ -86,6 +86,9 @@ appconfig:
   loglevel: "error"
   prometheusEnabled: "false"
 
+timeoutCron:
+  enabled: false
+
 database:
   dbname: "defaultdb"
   host: "postgres"
