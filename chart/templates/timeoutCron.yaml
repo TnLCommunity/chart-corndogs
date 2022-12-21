@@ -23,5 +23,5 @@ spec:
             {{- if .Values.timeoutCron.queue }}
             - {{printf "-q %v" (.Values.timeoutCron.queue | default .Values.service.queue) }}
             {{- end}} 
-          restartPolicy:  {{ .Values.timeoutCron.restartPolicy | default "OnFailure"}}
+          restartPolicy:  {{ .Values.timeoutCron.restartPolicy | default "Never"}}
 {{- end}}
