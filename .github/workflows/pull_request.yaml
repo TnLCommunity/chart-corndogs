@@ -3,6 +3,7 @@ on:
   pull_request:
     branches:
       - main
+      - alpha
 jobs:
   validate-pr-title:
     name: Validate PR Title
@@ -24,6 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        ref: ${{ github.head_ref }}
       - name: Set up Helm
         uses: azure/setup-helm@v1
         with:
@@ -36,6 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        ref: ${{ github.head_ref }}
       - name: Set up Helm
         uses: azure/setup-helm@v1
         with:
@@ -48,6 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        ref: ${{ github.head_ref }}
       - name: Set up Helm
         uses: azure/setup-helm@v1
         with:
