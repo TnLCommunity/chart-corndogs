@@ -18,10 +18,13 @@ spec:
             imagePullPolicy:  {{ .Values.image.pullPolicy}}
             args:
             - timeout
-            - {{printf "-a %s" (.Values.timeoutCron.address | default (include "corndogs.fullname" .)) }}
-            - {{printf "-p %v" (.Values.timeoutCron.port | default .Values.service.port) }}
+            - -a
+            - {{ .Values.timeoutCron.address | default (include "corndogs.fullname" .) | quote }}
+            - -p
+            - {{ .Values.timeoutCron.port | default .Values.service.port | quote }}
             {{- if .Values.timeoutCron.queue }}
-            - {{printf "-q %v" (.Values.timeoutCron.queue | default .Values.service.queue) }}
+            - -q
+            - {{ .Values.timeoutCron.queue | default .Values.service.queue | quote}}
             {{- end}} 
           restartPolicy:  {{ .Values.timeoutCron.restartPolicy | default "Never"}}
 {{- end}}
