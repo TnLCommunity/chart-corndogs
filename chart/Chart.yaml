@@ -9,7 +9,7 @@ appVersion: "0.3.0-alpha"
 
 dependencies:
   - name: postgresql
-    version: ~10.13.8
+    version: ~12.1.6
     repository: https://charts.bitnami.com/bitnami/
     condition: postgresql.enabled
   - name: prometheus
