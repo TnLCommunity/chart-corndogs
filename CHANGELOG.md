@@ -1,3 +1,10 @@
+# [1.1.0-alpha.2](https://github.com/TnLCommunity/chart-corndogs/compare/v1.1.0-alpha.1...v1.1.0-alpha.2) (2022-12-29)
+
+
+### Bug Fixes
+
+* prometheus ports ([82551af](https://github.com/TnLCommunity/chart-corndogs/commit/82551afb142c467f01bc36e520c008bec945a277))
+
 # [1.1.0-alpha.1](https://github.com/TnLCommunity/chart-corndogs/compare/v1.0.1...v1.1.0-alpha.1) (2022-12-29)
 
 
