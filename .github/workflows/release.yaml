@@ -14,6 +14,6 @@ jobs:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-      - uses: tnlcommunity/action-release-helm-chart@v1
+      - uses: catalystsquad/action-release-helm-chart@v1
         with:
           token: ${{ secrets.GIT_RUNNER_TOKEN }}

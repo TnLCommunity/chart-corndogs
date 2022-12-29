@@ -80,6 +80,11 @@ spec:
             - name: corndogsgrpc
               containerPort: 5080
               protocol: TCP
+            {{- if .Values.appconfig.prometheusEnabled }}
+            - name: corndogsmetrics
+              containerPort: 8080
+              protocol: TCP
+            {{- end }}
           livenessProbe:
             exec:
               command:
