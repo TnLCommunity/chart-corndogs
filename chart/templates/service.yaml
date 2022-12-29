@@ -11,5 +11,11 @@ spec:
       targetPort: corndogsgrpc
       protocol: TCP
       name: corndogsgrpc
+    {{- if .Values.appconfig.prometheusEnabled }}
+    - port: 8080
+      targetPort: corndogsmetrics
+      protocol: TCP
+      name: corndogsmetrics
+    {{- end }}
   selector:
     {{- include "corndogs.selectorLabels" . | nindent 4 }}
