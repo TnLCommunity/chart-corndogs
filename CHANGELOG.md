@@ -1,3 +1,10 @@
+# [1.2.0-alpha.1](https://github.com/TnLCommunity/chart-corndogs/compare/v1.1.0...v1.2.0-alpha.1) (2022-12-30)
+
+
+### Features
+
+* priority functionality ([4a70ede](https://github.com/TnLCommunity/chart-corndogs/commit/4a70edeb9c358751f8e8cc51dd109f58f9be9220))
+
 # [1.1.0](https://github.com/TnLCommunity/chart-corndogs/compare/v1.0.1...v1.1.0) (2022-12-29)
 
 
