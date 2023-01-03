@@ -1,3 +1,10 @@
+# [1.3.0-alpha.1](https://github.com/TnLCommunity/chart-corndogs/compare/v1.2.0...v1.3.0-alpha.1) (2023-01-03)
+
+
+### Features
+
+* metrics ([7ffd15d](https://github.com/TnLCommunity/chart-corndogs/commit/7ffd15d64147df7349fa5aacc8f6eedf82707bf4))
+
 # [1.2.0](https://github.com/TnLCommunity/chart-corndogs/compare/v1.1.0...v1.2.0) (2022-12-30)
 
 
