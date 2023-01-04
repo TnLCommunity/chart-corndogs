@@ -1,3 +1,10 @@
+## [1.3.1-alpha.1](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.0...v1.3.1-alpha.1) (2023-01-04)
+
+
+### Bug Fixes
+
+* add tests and rename stuff for GetTaskStateByID ([b3dee0b](https://github.com/TnLCommunity/chart-corndogs/commit/b3dee0bc2cb7f14c36cd8a19c594c890609a6d9d))
+
 # [1.3.0](https://github.com/TnLCommunity/chart-corndogs/compare/v1.2.0...v1.3.0) (2023-01-03)
 
 
