@@ -6,7 +6,7 @@ replicaCount: 1
 namespace: corndogs
 
 image:
-  repository: corndogs
+  repository: quay.io/tnlcommunity/corndogs
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
@@ -84,7 +84,7 @@ affinity: {}
 
 appconfig:
   loglevel: "error"
-  prometheusEnabled: "false"
+  prometheusEnabled: false
 
 # timeoutCron optionally creates a cronjob to send CleanUpTimedOut requests using the cli
 timeoutCron:

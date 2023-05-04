@@ -19,13 +19,3 @@ jobs:
             norelease
         env:
           GITHUB_TOKEN: ${{ github.token }}
-  validate-branch:
-    name: Validate branch
-    if: github.base_ref == 'main'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Only allow alpha to be merged to main
-        if: github.head_ref != 'alpha'
-        run: |
-          echo "Only alpha should be merged to main"
-          exit 1
