@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.3...v1.3.4) (2023-05-11)
+
+
+### Bug Fixes
+
+* fix default values to work with a default helm chart install without any overrides ([1976e8d](https://github.com/TnLCommunity/chart-corndogs/commit/1976e8d558732e7b12c35a8288c4173b95a1bdee))
+
 ## [1.3.3](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.2...v1.3.3) (2023-05-11)
 
 
