@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.2...v1.3.3) (2023-05-11)
+
+
+### Bug Fixes
+
+* skip merge from alpha to main ([943b84e](https://github.com/TnLCommunity/chart-corndogs/commit/943b84e4e3d4bfadaedc0d6b0c60d0bb6352230d))
+
 ## [1.3.2](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.1...v1.3.2) (2023-05-11)
 
 
