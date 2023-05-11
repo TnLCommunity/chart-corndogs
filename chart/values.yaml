@@ -106,10 +106,10 @@ timeoutCron:
 
 
 database:
-  dbname: "defaultdb"
-  host: "postgres"
+  dbname: "postgres"
+  host: "corndogs-postgresql"
   user: "postgres"
-  password: "changeme"
+  password: "postgres"
   maxIdleConns: "10"
   maxOpenConns: "10"
   connMaxLifetimeSeconds: "3600"
@@ -117,6 +117,14 @@ database:
     enabled: false
 
 postgresql:
-  enabled: false
+  enabled: true
+  # this makes local dev and default installation smooth, but don't run this in production
+  auth:
+    enablePostgresUser: true
+    postgresPassword: postgres
   tls:
     enabled: false
+  # disable persistence by default
+  primary:
+    persistence:
+      enabled: false
