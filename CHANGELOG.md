@@ -1,3 +1,13 @@
+## [1.3.2](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.1...v1.3.2) (2023-05-11)
+
+
+### Bug Fixes
+
+* now the community is spelled right ([0fb24e4](https://github.com/TnLCommunity/chart-corndogs/commit/0fb24e492989cdb18c78c8cf2c2803a8f30ed3f6))
+* reduce node version ([888d9a5](https://github.com/TnLCommunity/chart-corndogs/commit/888d9a5a162f61d5a388db73b07a3261904d2e40))
+* set appropriate docker image, update workflows ([c0940fc](https://github.com/TnLCommunity/chart-corndogs/commit/c0940fc671a3034c8fcaa8e3c5bd5e4b8171ba98))
+* setup full update with chart ([e95fd81](https://github.com/TnLCommunity/chart-corndogs/commit/e95fd811497d1c95bbbf35a51f4b936f2ce4bb6b))
+
 ## [1.3.1](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.0...v1.3.1) (2023-01-04)
 
 
