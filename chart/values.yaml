@@ -117,6 +117,7 @@ database:
     enabled: false
 
 postgresql:
+  fullnameOverride: corndogs-postgresql
   enabled: true
   # this makes local dev and default installation smooth, but don't run this in production
   auth:
