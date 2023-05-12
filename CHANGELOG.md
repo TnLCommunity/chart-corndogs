@@ -1,3 +1,11 @@
+## [1.3.5](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.4...v1.3.5) (2023-05-12)
+
+
+### Bug Fixes
+
+* Add support for zalando postgresql CRD, add database info to readme. ([fa31173](https://github.com/TnLCommunity/chart-corndogs/commit/fa31173998b605701aa38c9e16a1a749d2b10767))
+* Add support for zalando postgresql CRD, add database info to readme. ([2f9b442](https://github.com/TnLCommunity/chart-corndogs/commit/2f9b44275d5a4d2342cacf0e2f1d7143f00089bc))
+
 ## [1.3.4](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.3...v1.3.4) (2023-05-11)
 
 
