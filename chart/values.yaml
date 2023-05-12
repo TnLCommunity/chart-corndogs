@@ -129,3 +129,16 @@ postgresql:
   primary:
     persistence:
       enabled: false
+zalando_postgres:
+  enabled: false
+  spec:
+    teamId: "postgres"
+    numberOfInstances: 1
+    volume:
+      size: 100Mb
+    postgresql:
+      version: "15"
+      parameters:
+        max_connections: "250"
+    enableLogicalBackup: false
+    logicalBackupSchedule: "00 05 * * *"
