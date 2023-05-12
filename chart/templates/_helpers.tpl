@@ -60,3 +60,9 @@ Create the name of the service account to use
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
 {{- end }}
+{{- define "corndogs.zalando.posgresql.name" }}
+{{- include "corndogs.fullname" . }}-postgresql
+{{- end }}
+{{- define "corndogs.zalando.posgresql.credentials.secret.name" -}}
+postgres.{{ include "corndogs.zalando.posgresql.name" . }}.credentials.postgresql.acid.zalan.do
+{{- end }}

@@ -52,11 +52,11 @@ spec:
             - name: DATABASE_HOST
               value: {{ .Values.database.host }}
             {{- end }}
-            {{- if .Values.database.user }}
+            {{- if and (not .Values.zalando_postgres.enabled) .Values.database.user }}
             - name: DATABASE_USER
               value: {{ .Values.database.user }}
             {{- end }}
-            {{- if .Values.database.password }}
+            {{- if and (not .Values.zalando_postgres.enabled) .Values.database.password }}
             - name: DATABASE_PASSWORD
               value: {{ .Values.database.password }}
             {{- end }}
@@ -75,6 +75,18 @@ spec:
             {{- if .Values.database.maxIdleConns }}
             - name: DATABASE_MAX_IDLE_CONNS
               value: {{ .Values.database.maxIdleConns | quote }}
+            {{- end }}
+            {{- if .Values.zalando_postgres.enabled }}
+            - name: DATABASE_USER
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "corndogs.zalando.posgresql.credentials.secret.name" . }}
+                  key: username
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "corndogs.zalando.posgresql.credentials.secret.name" . }}
+                  key: password
             {{- end }}
           ports:
             - name: corndogsgrpc
