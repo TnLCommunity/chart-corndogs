@@ -1,3 +1,10 @@
+## [1.3.7](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.6...v1.3.7) (2023-05-24)
+
+
+### Bug Fixes
+
+* Fix last usage of DB.Create ([3d4a611](https://github.com/TnLCommunity/chart-corndogs/commit/3d4a611eef4e120b342a41ffd3544f2e32c86907))
+
 ## [1.3.6](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.5...v1.3.6) (2023-05-24)
 
 
