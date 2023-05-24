@@ -1,3 +1,10 @@
+## [1.3.6](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.5...v1.3.6) (2023-05-24)
+
+
+### Bug Fixes
+
+* use transaction object instead of DB object ([728544b](https://github.com/TnLCommunity/chart-corndogs/commit/728544b689fd8464d1c52be08d07805fc4d969c2))
+
 ## [1.3.5](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.4...v1.3.5) (2023-05-12)
 
 
