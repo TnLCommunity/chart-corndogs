@@ -129,6 +129,7 @@ postgresql:
   primary:
     persistence:
       enabled: false
+
 zalando_postgres:
   enabled: false
   spec:
@@ -142,3 +143,12 @@ zalando_postgres:
         max_connections: "250"
     enableLogicalBackup: false
     logicalBackupSchedule: "00 05 * * *"
+
+serviceMonitor:
+  enabled: false
+  namespaceSelector: {}
+  annotations: {}
+  labels: {}
+  interval: null
+  scrapeTimeout: null
+  relabelings: []
