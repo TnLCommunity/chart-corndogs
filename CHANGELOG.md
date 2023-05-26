@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.7...v1.4.0) (2023-05-26)
+
+
+### Bug Fixes
+
+* remove prometheus from chart dependencies ([d6c4b5d](https://github.com/TnLCommunity/chart-corndogs/commit/d6c4b5d1a73e4b9602cd34bb58e9a51c5670812a))
+
+
+### Features
+
+* add an optional serviceMonitor ([1ffb14b](https://github.com/TnLCommunity/chart-corndogs/commit/1ffb14b95759a21c942a3202846edc84a0ee0655))
+
 ## [1.3.7](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.6...v1.3.7) (2023-05-24)
 
 
