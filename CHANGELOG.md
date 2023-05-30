@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/TnLCommunity/chart-corndogs/compare/v1.4.0...v1.4.1) (2023-05-30)
+
+
+### Bug Fixes
+
+* adjust indexes for scale and upgrade packages ([8919e31](https://github.com/TnLCommunity/chart-corndogs/commit/8919e31cb01c43be0c4bcabe3f7a84be4ef95d5f))
+
 # [1.4.0](https://github.com/TnLCommunity/chart-corndogs/compare/v1.3.7...v1.4.0) (2023-05-26)
 
 
