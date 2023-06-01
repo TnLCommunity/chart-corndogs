@@ -2,7 +2,7 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: {{ include "corndogs.fullname" . }}
+  name: {{ include "corndogs.fullname" . }}-timeout-cron
 spec:
   schedule: {{ .Values.timeoutCron.schedule | quote }}
   concurrencyPolicy: Forbid
