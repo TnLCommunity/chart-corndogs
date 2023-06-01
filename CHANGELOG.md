@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/TnLCommunity/chart-corndogs/compare/v1.4.1...v1.4.2) (2023-06-01)
+
+
+### Bug Fixes
+
+* add -timeout-cron suffix to cronjob resource ([52f8409](https://github.com/TnLCommunity/chart-corndogs/commit/52f8409165f539530273dd902345568edc12d1f3))
+
 ## [1.4.1](https://github.com/TnLCommunity/chart-corndogs/compare/v1.4.0...v1.4.1) (2023-05-30)
 
 
