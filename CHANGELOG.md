@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/TnLCommunity/chart-corndogs/compare/v1.4.2...v1.4.3) (2023-06-09)
+
+
+### Bug Fixes
+
+* send request context to database transaction ([83857dd](https://github.com/TnLCommunity/chart-corndogs/commit/83857dde01a2381c278d630dd3fd97e88c5deb9e))
+
 ## [1.4.2](https://github.com/TnLCommunity/chart-corndogs/compare/v1.4.1...v1.4.2) (2023-06-01)
 
 
